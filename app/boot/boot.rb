@@ -11,9 +11,7 @@ Bot.on :message do |message|
         message.reply(text: "Dors bien")
     else
         message.reply(text: 'Reponse par defaut')
-    end
     
-Bot.on :message do |message|
     if message.text.include? "Comment vas tu ?"
        message.reply(text: "très bien et vous ?")
      end
