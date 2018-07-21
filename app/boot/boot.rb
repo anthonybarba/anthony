@@ -6,9 +6,9 @@ Facebook::Messenger::Subscriptions.subscribe(access_token: ENV["ACCESS_TOKEN"])
 
 Bot.on :message do |message|
     if message.text.include? "Bonjour"
-       message.reply(text: "Bonjour Monsieur")
+       message.reply(text: "Bonjour couillon")
    elsif message.text.include? "Bonne nuit"
-        message.reply(text: "Dors bien")
+        message.reply(text: "Dors mal")
     else
         message.reply(text: 'Reponse par defaut')
     end
