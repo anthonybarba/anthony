@@ -13,8 +13,3 @@ Bot.on :message do |message|
         message.reply(text: 'Reponse par defaut')
      end
 end
-
-    if message.text.include? "comment vas tu ?"
-        message.reply(text: "très bien et vous ?")
-    end
-end
