@@ -9,7 +9,12 @@ Bot.on :message do |message|
        message.reply(text: "Bonjour Monsieur")
     elsif message.text.include? "Bonne nuit"
         message.reply(text: "Dors bien")
-    else
-        message.reply(text: 'Reponse par defaut')
-     end
+    elsif message.text.include? "Comment vas tu ?"
+        message.reply(text: "Très bien et toi ?")
+    elsif message.text.include? "Bonne nuit"
+        message.reply(text: "Dors bien")
+     else
+       message.reply(text: 'Reponse par defaut')
+    end
+     
 end
